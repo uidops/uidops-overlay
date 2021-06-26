@@ -25,7 +25,7 @@ RDEPEND="!=app-emulation/virtualbox-9999"
 
 S="${WORKDIR}"
 
-BUILD_TARGETS=""
+BUILD_TARGETS="module"
 MODULE_NAMES="vboxdrv(misc:${S}) vboxnetflt(misc:${S}) vboxnetadp(misc:${S})"
 MODULESD_VBOXDRV_ENABLED="yes"
 MODULESD_VBOXNETADP_ENABLED="no"
