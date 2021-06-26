@@ -33,7 +33,7 @@ MODULESD_VBOXNETFLT_ENABLED="no"
 
 pkg_setup() {
 	linux-mod_pkg_setup
-	BUILD_PARAMS="CC=clang LD=ld.lld"
+	BUILD_PARAMS="CC=clang LD=ld.lld ldflags-y=--thinlto-cache-dir= LDFLAGS_MODULE=--thinlto-cache-dir="
 }
 
 src_prepare() {
