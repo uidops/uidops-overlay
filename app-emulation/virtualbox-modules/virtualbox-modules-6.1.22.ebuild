@@ -33,7 +33,7 @@ MODULESD_VBOXNETFLT_ENABLED="no"
 
 pkg_setup() {
 	linux-mod_pkg_setup
-	BUILD_PARAMS="CC=clang KERN_DIR=${KV_DIR} KERN_VER=${KV_FULL} O=${KV_OUT_DIR} V=1 KBUILD_VERBOSE=1 LD=ld.lld"
+	BUILD_PARAMS="CC=clang LD=ld.lld"
 }
 
 src_prepare() {
