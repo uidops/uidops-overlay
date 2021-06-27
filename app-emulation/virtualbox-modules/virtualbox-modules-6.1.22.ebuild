@@ -1,11 +1,3 @@
-# Copyright 1999-2021 Gentoo Authors
-# Distributed under the terms of the GNU General Public License v2
-
-# XXX: the tarball here is just the kernel modules split out of the binary
-#      package that comes from virtualbox-bin
-
-# Edited by uidops for clang/lto support
-
 EAPI=7
 
 inherit linux-mod toolchain-funcs
@@ -33,7 +25,7 @@ MODULESD_VBOXNETFLT_ENABLED="no"
 
 pkg_setup() {
 	linux-mod_pkg_setup
-	BUILD_PARAMS="CC=clang LD=ld.lld ldflags-y=--thinlto-cache-dir= LDFLAGS_MODULE=--thinlto-cache-dir="
+	BUILD_PARAMS="KERN_DIR=${KV_DIR} KERN_VER=${KV_FULL} O=${KV_OUT_DIR} V=1 KBUILD_VERBOSE=1 CC=clang LD=ld.lld ldflags-y=--thinlto-cache-dir= LDFLAGS_MODULE=--thinlto-cache-dir="
 }
 
 src_prepare() {
