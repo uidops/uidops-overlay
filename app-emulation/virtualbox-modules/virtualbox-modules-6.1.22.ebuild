@@ -25,7 +25,20 @@ MODULESD_VBOXNETFLT_ENABLED="no"
 
 pkg_setup() {
 	linux-mod_pkg_setup
-	BUILD_PARAMS="KERN_DIR=${KV_DIR} KERN_VER=${KV_FULL} O=${KV_OUT_DIR} V=1 KBUILD_VERBOSE=1 CC=clang LD=ld.lld ldflags-y=--thinlto-cache-dir= LDFLAGS_MODULE=--thinlto-cache-dir="
+	BUILD_PARAMS="KERN_DIR=${KV_DIR} KERN_VER=${KV_FULL} O=${KV_OUT_DIR} V=1 KBUILD_VERBOSE=1"
+
+	if linux_chkconfig_present CC_IS_CLANG; then
+		ewarn "Warning: building ${PN} with a clang-built kernel is experimental."
+
+		BUILD_PARAMS+=" CC=${CHOST}-clang"
+		if linux_chkconfig_present LD_IS_LLD; then
+			BUILD_PARAMS+=" LD=ld.lld"
+			if linux_chkconfig_present LTO_CLANG_THIN; then
+				BUILD_PARAMS+=" ldflags-y=--thinlto-cache-dir= LDFLAGS_MODULE=--thinlto-cache-dir="
+			fi
+		fi
+	fi
+
 }
 
 src_prepare() {
