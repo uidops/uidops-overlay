@@ -3,7 +3,7 @@
 
 EAPI=7
 
-inherit linux-mod
+inherit linux-mod git-r3
 
 DESCRIPTION="ReatlTek 8821ce wifi driver"
 HOMEPAGE="https://github.com/tomaspinho/rtl8821ce/"
