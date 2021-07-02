@@ -27,8 +27,6 @@ RDEPEND="${COMMON}"
 
 REQUIRED_USE="kernel_linux"
 
-S="${WORKDIR}/rtl8821ce"
-
 PATCHES=( "${FILESDIR}"/use-correct-kernel.patch )
 BUILD_PARAMS=""
 
