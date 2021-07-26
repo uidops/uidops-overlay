@@ -29,7 +29,6 @@ src_unpack() {
 src_install() {
 	dobin "${FILESDIR}"/burpsuite
 
-	dodir "/opt/burpsuite"
 	doins "${MY_P}" "/opt/burpsuite/"
 	dosym /opt/burpsuite/"${MY_P}" /opt/burpsuite/burpsuite.jar
 
