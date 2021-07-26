@@ -25,7 +25,7 @@ src_unpack() {
 
 src_install() {
 	dobin "${FILESDIR}/apktool"
+
 	insinto "/opt/${PN}/"
 	doins apktool.jar
 }
-
