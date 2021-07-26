@@ -27,7 +27,7 @@ src_unpack() {
 }
 
 src_install() {
-	dosbin "${FILESDIR}"/burpsuite "/usr/bin/burpsuite"
+	dobin "${FILESDIR}"/burpsuite
 
 	dodir "/opt/burpsuite"
 	doins "${MY_P}" "/opt/burpsuite/"
