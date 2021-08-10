@@ -31,12 +31,3 @@ src_install() {
 	dobin betterlockscreen
 	dodoc -r examples
 }
-
-pkg_postinst() {
-	elog 'How to use:'
-	elog '1. Updating image cache(required)'
-	elog 'betterlockscreen -u "/path/to/img.jpg"'
-	elog '2. Lockscreen'
-	elog 'betterlockscreen -l dim '
-}
-
