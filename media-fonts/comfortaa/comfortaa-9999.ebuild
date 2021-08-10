@@ -17,7 +17,7 @@ EGIT_REPO_URI="${HOMEPAGE}.git"
 LICENSE="OFL-1.1"
 SLOT="0"
 
-S="${WORKDIR}/${PN}/fonts/TTF"
+S="${WORKDIR}/${PN}-${PV}/fonts/TTF"
 
 FONT_S="${S}"
 FONT_SUFFIX="ttf"
