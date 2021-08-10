@@ -8,7 +8,7 @@ HOMEPAGE="https://github.com/vinceliuice/Layan-cursors"
 
 MY_P=${PN}-$(ver_rs 0 -)-$(ver_rs 1 -)-$(ver_rs 2 -)
 
-SRC_URI="${HOMEPAGE}/archive/refs/tags/2021-08-01.tar.gz"
+SRC_URI="${HOMEPAGE}/archive/refs/tags/2021-08-01.tar.gz -> layan.tar.gz"
 
 KEYWORDS="amd64 x86"
 
@@ -23,12 +23,12 @@ S=${WORKDIR}
 
 src_install() {
         insinto /usr/share/icons/Layan-cursors
-        doins "dist/"
+        doins "${S}/layan/dist/"
 
 		insinto /usr/share/icons/Layan-border-cursors
-		ddoins "dist-border/"
+		ddoins "${S}/layan/dist-border/"
 
 		insinto /usr/share/icons/Layan-white-cursors
-		ddoins "dist-white/"
+		ddoins "${S}/layan/dist-white/"
 }
 
