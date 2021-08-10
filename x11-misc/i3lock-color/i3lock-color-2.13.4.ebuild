@@ -29,6 +29,8 @@ RDEPEND=">=x11-libs/libxkbcommon-0.5.0[X]
 DEPEND="${RDEPEND}"
 DOCS=( CHANGELOG README.md )
 
+S="${WORKDIR}/${PN}-${MY_PV}"
+
 src_prepare() {
 	default
 	eautoreconf
