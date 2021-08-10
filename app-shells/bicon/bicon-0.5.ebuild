@@ -11,7 +11,8 @@ LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
 
-RDEPEND="${COMMON}"
+RDEPEND="${COMMON}
+>=dev-libs/fribidi-1.0:="
 BUILD_PARAMS=""
 
 pkg_setup() {
