@@ -23,12 +23,12 @@ S=${WORKDIR}/Layan-cursors-${MY_P}
 
 src_install() {
         insinto /usr/share/icons/Layan-cursors
-        doins "${S}/dist/"
+        dodir "${S}/dist/"
 
 		insinto /usr/share/icons/Layan-border-cursors
-		ddoins "${S}/dist-border/"
+		dodir "${S}/dist-border/"
 
 		insinto /usr/share/icons/Layan-white-cursors
-		ddoins "${S}/dist-white/"
+		dodir "${S}/dist-white/"
 }
 
