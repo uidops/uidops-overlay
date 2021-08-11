@@ -19,16 +19,16 @@ IUSE=""
 DEPEND=""
 RDEPEND=""
 
-S=${WORKDIR}
+S=${WORKDIR}/Layan-cursors-${MY_P}
 
 src_install() {
         insinto /usr/share/icons/Layan-cursors
-        doins "${S}/layan/dist/"
+        doins "${S}/dist/"
 
 		insinto /usr/share/icons/Layan-border-cursors
-		ddoins "${S}/layan/dist-border/"
+		ddoins "${S}/dist-border/"
 
 		insinto /usr/share/icons/Layan-white-cursors
-		ddoins "${S}/layan/dist-white/"
+		ddoins "${S}/dist-white/"
 }
 
