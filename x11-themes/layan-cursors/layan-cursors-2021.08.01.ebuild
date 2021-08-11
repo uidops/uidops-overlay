@@ -6,9 +6,9 @@ EAPI=7
 DESCRIPTION="Layan-cursors"
 HOMEPAGE="https://github.com/vinceliuice/Layan-cursors"
 
-MY_P=${PN}-$(ver_rs 0 -)-$(ver_rs 1 -)-$(ver_rs 2 -)
+MY_P="2021-08-01"
 
-SRC_URI="${HOMEPAGE}/archive/refs/tags/2021-08-01.tar.gz -> layan.tar.gz"
+SRC_URI="${HOMEPAGE}/archive/refs/tags/${MY_P}.tar.gz -> layan.tar.gz"
 
 KEYWORDS="amd64 x86"
 
