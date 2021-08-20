@@ -19,4 +19,3 @@ IUSE=""
 RDEPEND=""
 
 S="${S}.0"
-
