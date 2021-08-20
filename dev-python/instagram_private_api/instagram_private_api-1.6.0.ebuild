@@ -17,3 +17,11 @@ KEYWORDS="amd64 ~arm arm64 ~ppc ppc64 ~riscv ~sparc x86"
 IUSE=""
 
 RDEPEND=""
+
+src_prepare() {
+        sed \
+                -e 's:--cov=wheel::g' \
+                -i setup.cfg || die
+        distutils-r1_src_prepare
+}
+
