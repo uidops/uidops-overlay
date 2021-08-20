@@ -20,6 +20,10 @@ RDEPEND=""
 
 S="${S}.0"
 
+src_prepare() {
+	distutils-r1_src_prepare
+}
+
 pkg_setup() {
     python-single-r1_pkg_setup
 }
