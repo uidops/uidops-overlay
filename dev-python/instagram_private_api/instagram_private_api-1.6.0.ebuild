@@ -18,7 +18,7 @@ IUSE=""
 
 RDEPEND=""
 
-S="instagram_private_api-1.6.0.0"
+#S="instagram_private_api-1.6.0.0"
 
 python_prepare_all() {
     export SETUPTOOLS_SCM_PRETEND_VERSION=${PV}
