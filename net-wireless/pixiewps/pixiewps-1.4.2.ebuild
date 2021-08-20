@@ -1,0 +1,22 @@
+# Copyright 1999-2021 Gentoo Authors
+# Distributed under the terms of the GNU General Public License v2
+
+EAPI=7
+
+DESCRIPTION="An offline Wi-Fi Protected Setup brute-force utility"
+HOMEPAGE="https://github.com/wiire/pixiewps"
+SRC_URI="https://github.com/wiire/pixiewps/archive/v${PV}.tar.gz -> ${P}.tar.gz"
+
+LICENSE="GPL-3"
+SLOT="0"
+KEYWORDS="amd64 ~arm64 x86"
+IUSE=""
+
+DEPEND="dev-libs/openssl:0"
+RDEPEND="${DEPEND}"
+
+src_install(){
+	emake DESTDIR="${ED}" PREFIX="${EPREFIX}/usr" install
+	dodoc README.md
+}
+
