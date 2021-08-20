@@ -19,3 +19,8 @@ IUSE=""
 RDEPEND=""
 
 S="${S}.0"
+
+pkg_setup() {
+    use python && python-single-r1_pkg_setup
+}
+
