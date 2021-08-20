@@ -1,10 +1,10 @@
 # Copyright 1999-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=8
+EAPI=7
 
 PYTHON_COMPAT=( python3_{8..10} )
-inherit python-single-r1
+inherit python-r1 distutils-r1
 DISTUTILS_SINGLE_IMPL=1
 
 DESCRIPTION="A Python library to access Instagram's private API"
