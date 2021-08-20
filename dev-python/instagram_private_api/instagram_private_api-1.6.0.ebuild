@@ -7,13 +7,13 @@ PYTHON_COMPAT=( python3_{8..10} )
 PYTHON_REQ_USE="threads(+)"
 inherit distutils-r1
 
-DESCRIPTION="A Python wrapper for ngrok"
+DESCRIPTION="A Python library to access Instagram's private API"
 HOMEPAGE="https://github.com/ipython/ipykernel"
-SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${P}.tar.gz"
+SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${P}.0.tar.gz"
 
 LICENSE="BSD"
 SLOT="0"
 KEYWORDS="amd64 ~arm arm64 ~ppc ppc64 ~riscv ~sparc x86"
 IUSE=""
 
-RDEPEND=">=dev-python/pyyaml-5.3.1[${PYTHON_USEDEP}]"
+RDEPEND=""
