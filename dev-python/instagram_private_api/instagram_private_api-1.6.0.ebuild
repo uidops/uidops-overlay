@@ -14,13 +14,13 @@ SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${P}.0.tar.gz"
 LICENSE="BSD"
 SLOT="0"
 KEYWORDS="amd64 ~arm arm64 ~ppc ppc64 ~riscv ~sparc x86"
-IUSE="${u}"
+IUSE=""
 
 RDEPEND=""
 
 S="${S}.0"
 
 pkg_setup() {
-    use python && python-single-r1_pkg_setup
+    python-single-r1_pkg_setup
 }
 
