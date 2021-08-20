@@ -4,11 +4,11 @@
 EAPI=8
 
 PYTHON_COMPAT=( python3_{8..10} )
-PYTHON_REQ_USE="threads(+)"
 inherit distutils-r1
+DISTUTILS_SINGLE_IMPL=1
 
 DESCRIPTION="A Python library to access Instagram's private API"
-HOMEPAGE="https://github.com/ipython/ipykernel"
+HOMEPAGE="https://github.com/ping/instagram_private_api"
 SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${P}.0.tar.gz"
 
 LICENSE="BSD"
@@ -18,10 +18,14 @@ IUSE=""
 
 RDEPEND=""
 
-src_prepare() {
-        sed \
-                -e 's:--cov=wheel::g' \
-                -i setup.cfg || die
-        distutils-r1_src_prepare
+python_prepare_all() {
+    export SETUPTOOLS_SCM_PRETEND_VERSION=${PV}
+
+    distutils-r1_python_prepare_all
 }
 
+python_install_all() {
+    DOCS=( README.md )
+
+    distutils-r1_python_install_all
+}
