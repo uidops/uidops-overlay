@@ -4,7 +4,7 @@
 EAPI=8
 
 PYTHON_COMPAT=( python3_{8..10} )
-inherit distutils-r1
+inherit python-single-r1
 DISTUTILS_SINGLE_IMPL=1
 
 DESCRIPTION="A Python library to access Instagram's private API"
@@ -19,10 +19,6 @@ IUSE=""
 RDEPEND=""
 
 S="${S}.0"
-
-src_prepare() {
-	distutils-r1_src_prepare
-}
 
 pkg_setup() {
     python-single-r1_pkg_setup
