@@ -20,14 +20,3 @@ RDEPEND=""
 
 S="${S}.0"
 
-python_prepare_all() {
-    export SETUPTOOLS_SCM_PRETEND_VERSION=${PV}
-
-    distutils-r1_python_prepare_all
-}
-
-python_install_all() {
-    DOCS=( README.md )
-
-    distutils-r1_python_install_all
-}
