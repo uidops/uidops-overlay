@@ -1,0 +1,36 @@
+# Copyright 1999-2021 Gentoo Foundation
+# Distributed under the terms of the GNU General Public License v2
+
+EAPI=7
+
+inherit eutils
+
+DESCRIPTION=""
+HOMEPAGE="http://www.willhackforsushi.com/?page_id=50"
+SRC_URI="https://github.com/joswr1ght/cowpatty/archive/${PV}.tar.gz -> ${P}.tar.gz"
+
+LICENSE="BSD"
+SLOT="0"
+KEYWORDS="amd64 x86"
+IUSE=""
+
+DEPEND="dev-libs/openssl:*
+	net-libs/libpcap"
+RDEPEND="${DEPEND}"
+
+src_prepare() {
+	sed -i 's|clang|gcc|' Makefile || die
+	sed -i "s#-O2#${CFLAGS} ${LDFLAGS}#" Makefile || die
+	sed -i 's#-pipe -Wall##' Makefile || die
+	eapply_user
+}
+
+src_compile() {
+	emake -j1
+}
+
+src_install() {
+	dobin cowpatty genpmk  || die "dobin failed"
+	dodoc AUTHORS CHANGELOG FAQ INSTALL README TODO dict *.dump
+}
+
