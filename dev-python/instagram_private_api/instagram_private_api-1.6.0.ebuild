@@ -18,7 +18,7 @@ IUSE=""
 
 RDEPEND=""
 
-S="${PN}/${P}.0"
+S="${PN}-${P}.0"
 
 python_prepare_all() {
     export SETUPTOOLS_SCM_PRETEND_VERSION=${PV}
