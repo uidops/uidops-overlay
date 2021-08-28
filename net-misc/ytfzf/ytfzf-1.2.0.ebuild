@@ -22,8 +22,6 @@ fzf? ( app-shells/fzf )
 thumbnail? ( media-gfx/ueberzug )
 "
 
-S="${WORKDIR}"
-
 DOCS=( README.md docs/conf.sh docs/INSTALL.md docs/USAGE.md )
 
 src_compile() {
