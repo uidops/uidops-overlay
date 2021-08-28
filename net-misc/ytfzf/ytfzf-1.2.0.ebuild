@@ -26,6 +26,10 @@ S="${WORKDIR}"
 
 DOCS=( README.md docs/conf.sh docs/INSTALL.md docs/USAGE.md )
 
+src_compile() {
+	rm Makefile
+}
+
 src_install() {
 	dobin ytfzf
 	einstalldocs
