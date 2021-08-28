@@ -24,7 +24,7 @@ thumbnail? ( media-gfx/ueberzug )
 
 DOCS=( README.md docs/conf.sh docs/INSTALL.md docs/USAGE.md )
 
-src_install() {
+install() {
 	dobin ytzf
 	einstalldocs
 }
