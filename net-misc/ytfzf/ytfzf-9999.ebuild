@@ -9,7 +9,7 @@ DESCRIPTION="A posix script to find and watch youtube videos from the terminal. 
 HOMEPAGE="https://github.com/pystardust/ytfzf"
 EGIT_REPO_URI="https://github.com/pystardust/ytfzf.git"
 
-KEYWORDS="amd64 x86"
+KEYWORDS="~amd64 ~x86"
 
 LICENSE="GPL-3"
 SLOT="0"
