@@ -26,9 +26,11 @@ thumbnail? ( media-gfx/ueberzug )
 
 DOCS=( README.md docs/conf.sh docs/INSTALL.md docs/USAGE.md )
 
-src_install() {
-	dodir "usr/bin"
+src_compile() {
+	rm Makefile
+}
 
-	emake DESTDIR="${D}" PREFIX=/usr/bin install
+src_install() {
+	dobin ytfzf
 	einstalldocs
 }
