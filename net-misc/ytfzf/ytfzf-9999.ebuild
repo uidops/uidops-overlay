@@ -27,10 +27,12 @@ thumbnail? ( media-gfx/ueberzug )
 DOCS=( README.md docs/conf.sh docs/INSTALL.md docs/USAGE.md )
 
 src_compile() {
-	rm Makefile
+	true
 }
 
 src_install() {
-	dobin ytfzf
+	dodir "usr/bin"
+	emake DESTDIR="${D}" PREFIX=/usr/bin install
+
 	einstalldocs
 }
