@@ -3,9 +3,11 @@
 
 EAPI=7
 
+inherit git-r3
+
 DESCRIPTION="A posix script to find and watch youtube videos from the terminal. (Without API)"
 HOMEPAGE="https://github.com/pystardust/ytfzf"
-SRC_URI="https://github.com/pystardust/ytfzf/archive/refs/tags/v${PV}.tar.gz"
+EGIT_REPO_URI="https://github.com/pystardust/ytfzf.git"
 
 KEYWORDS="amd64 x86"
 
