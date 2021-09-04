@@ -89,6 +89,8 @@ HOMEPAGE="https://cointop.sh"
 SRC_URI="https://github.com/miguelmota/${PN}/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz
 	${EGO_SUM_SRC_URI}"
 
+S="${WORKDIR}/${PN}-${PV}"
+
 LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="amd64 x86"
