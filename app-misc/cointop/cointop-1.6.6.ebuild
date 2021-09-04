@@ -36,8 +36,8 @@ EGO_SUM=(
 	"github.com/maruel/panicparse v1.5.0"
     "github.com/maruel/panicparse v1.5.0/go.mod"
 
-	"github.com/mattn/go-colorable v0.1.7 // indirect"
-    "github.com/mattn/go-colorable v0.1.7 // indirect/go.mod"
+	"github.com/mattn/go-colorable v0.1.7"
+    "github.com/mattn/go-colorable v0.1.7/go.mod"
 
 	"github.com/mattn/go-runewidth v0.0.9"
     "github.com/mattn/go-runewidth v0.0.9/go.mod"
@@ -63,8 +63,8 @@ EGO_SUM=(
 	"github.com/spf13/cobra v1.0.0"
     "github.com/spf13/cobra v1.0.0/go.mod"
 
-	"github.com/spf13/pflag v1.0.5 // indirect"
-    "github.com/spf13/pflag v1.0.5 // indirect/go.mod"
+	"github.com/spf13/pflag v1.0.5"
+    "github.com/spf13/pflag v1.0.5/go.mod"
 
 	"github.com/tomnomnom/xtermcolor v0.0.0-20160428124646-b78803f00a7e"
     "github.com/tomnomnom/xtermcolor v0.0.0-20160428124646-b78803f00a7e/go.mod"
@@ -72,11 +72,11 @@ EGO_SUM=(
 	"golang.org/x/crypto v0.0.0-20200728195943-123391ffb6de"
     "golang.org/x/crypto v0.0.0-20200728195943-123391ffb6de/go.mod"
 
-	"golang.org/x/net v0.0.0-20200707034311-ab3426394381 // indirect"
-    "golang.org/x/net v0.0.0-20200707034311-ab3426394381 // indirect/go.mod"
+	"golang.org/x/net v0.0.0-20200707034311-ab3426394381"
+    "golang.org/x/net v0.0.0-20200707034311-ab3426394381/go.mod"
 
-	"golang.org/x/sys v0.0.0-20200810151505-1b9f1253b3ed // indirect"
-    "golang.org/x/sys v0.0.0-20200810151505-1b9f1253b3ed // indirect/go.mod"
+	"golang.org/x/sys v0.0.0-20200810151505-1b9f1253b3ed"
+    "golang.org/x/sys v0.0.0-20200810151505-1b9f1253b3ed/go.mod"
 
 	"golang.org/x/text v0.3.3"
     "golang.org/x/text v0.3.3/go.mod"
