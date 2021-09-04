@@ -37,7 +37,8 @@ EGO_SUM=(
     "github.com/maruel/panicparse v1.5.0/go.mod"
 
 	"github.com/mattn/go-colorable v0.1.7"
-    "github.com/mattn/go-colorable v0.1.7/go.mod"
+    "github.com/mattn/go-isatty v0.0.12"
+    "github.com/mattn/go-isatty v0.0.12/go.mod"
 
 	"github.com/mattn/go-runewidth v0.0.9"
     "github.com/mattn/go-runewidth v0.0.9/go.mod"
