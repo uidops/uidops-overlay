@@ -7,7 +7,7 @@ inherit go-module
 
 DESCRIPTION="A fast and lightweight interactive terminal based UI application for tracking cryptocurrencies"
 HOMEPAGE="https://github.com/miguelmota/cointop"
-SRC_URI="${HOMEPAGE}/archive/${PV}.tar.gz -> ${P}.tar.gz"
+SRC_URI="${HOMEPAGE}/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="Apache-2.0"
 SLOT="0"
