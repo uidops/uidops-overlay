@@ -191,8 +191,7 @@ COMMON_DEPEND="${PYTHON_DEPS}
 			(
 				sys-devel/clang:13
 				sys-devel/llvm:13
-				=sys-devel/lld-13
-			)
+				=sys-devel/lld-13*  )
 			(	sys-devel/clang:12
 				sys-devel/llvm:12
 				=sys-devel/lld-12*	)
