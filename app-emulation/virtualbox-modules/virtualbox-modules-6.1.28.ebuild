@@ -33,7 +33,7 @@ pkg_setup() {
 	if linux_chkconfig_present CC_IS_CLANG; then
 		ewarn "Warning: building ${PN} with a clang-built kernel is experimental."
 
-		BUILD_PARAMS+=" CC=clang"
+		BUILD_PARAMS+=" CC=${CHOST}-clang"
 		if linux_chkconfig_present LD_IS_LLD; then
 			BUILD_PARAMS+=" LD=ld.lld"
 			if linux_chkconfig_present LTO_CLANG_THIN; then
