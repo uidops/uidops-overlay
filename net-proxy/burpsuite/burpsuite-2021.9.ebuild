@@ -18,7 +18,7 @@ SLOT="0"
 IUSE=""
 
 DEPEND=""
-RDEPEND=">=dev-java/openjdk-bin-11"
+RDEPEND=">=dev-java/openjdk-bin-17"
 
 S=${WORKDIR}
 
