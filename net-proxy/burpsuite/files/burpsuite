@@ -1,4 +1,4 @@
 #!/bin/sh
 
 export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on'
-/opt/openjdk-bin-17/bin/java -Xmx2G -jar /opt/burpsuite/burpsuite.jar $@
+/opt/openjdk-bin-17/bin/java --add-opens=java.desktop/javax.swing=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED -Xmx2G -jar /opt/burpsuite/burpsuite.jar $@
